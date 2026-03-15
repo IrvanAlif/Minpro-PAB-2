@@ -15,34 +15,45 @@ Camping Rental App adalah aplikasi yang dirancang untuk memudahkan pengelolaan p
 ### Autentikasi
 Pengguna harus login terlebih dahulu sebelum menggunakan aplikasi. Tersedia fitur **Register** untuk membuat akun baru dan **Login** untuk masuk ke akun yang sudah ada. Setelah selesai menggunakan aplikasi, pengguna dapat **Logout** melalui tombol di pojok kanan atas. Autentikasi menggunakan Supabase Auth sehingga data pengguna aman dan terenkripsi.
 
-<!-- Tambahkan screenshot halaman login/register di sini -->
+<p align="center">
+  <img src="screenshots/login.png" width="200"/>
+  <img src="screenshots/register.png" width="200"/>
+</p>
 
 ---
 
 ### Manajemen Peminjaman
 Fitur utama aplikasi untuk mencatat data peminjaman alat camping. Mendukung operasi CRUD lengkap:
 
--  **Tambah (Create)** — Menambahkan peminjaman baru dengan mengisi nama peminjam, nomor HP, jumlah hari, dan memilih alat yang dipinjam beserta jumlahnya. Estimasi total biaya ditampilkan secara otomatis.
--  **Lihat (Read)** — Menampilkan seluruh daftar peminjaman beserta status, jumlah barang, dan total biaya. Tersedia tombol **Detail** untuk melihat rincian lengkap setiap peminjaman.
--  **Edit (Update)** — Mengubah data peminjaman yang masih berstatus Aktif, termasuk nama, nomor HP, jumlah hari, dan barang yang dipinjam.
--  **Hapus (Delete)** — Menghapus data peminjaman secara permanen dari database.
--  **Kembalikan** — Menandai peminjaman sebagai **Selesai** ketika alat sudah dikembalikan, sehingga stok alat otomatis bertambah kembali.
+- **Tambah (Create)** — Menambahkan peminjaman baru dengan mengisi nama peminjam, nomor HP, jumlah hari, dan memilih alat yang dipinjam beserta jumlahnya. Estimasi total biaya ditampilkan secara otomatis.
+- **Lihat (Read)** — Menampilkan seluruh daftar peminjaman beserta status, jumlah barang, dan total biaya. Tersedia tombol **Detail** untuk melihat rincian lengkap setiap peminjaman.
+- **Edit (Update)** — Mengubah data peminjaman yang masih berstatus Aktif, termasuk nama, nomor HP, jumlah hari, dan barang yang dipinjam.
+- **Hapus (Delete)** — Menghapus data peminjaman secara permanen dari database.
+- **Kembalikan** — Menandai peminjaman sebagai **Selesai** ketika alat sudah dikembalikan, sehingga stok alat otomatis bertambah kembali.
 
-
+<p align="center">
+  <img src="screenshots/peminjaman_light.png" width="200"/>
+  <img src="screenshots/form_tambah_pinjam.png" width="200"/>
+  <img src="screenshots/form_edit_pinjam.png" width="200"/>
+  <img src="screenshots/detail_peminjaman.png" width="200"/>
+</p>
 
 ---
 
 ### Manajemen Stok Alat
 Fitur untuk mengelola data alat camping yang tersedia. Mendukung operasi CRUD lengkap:
 
--  **Tambah (Create)** — Menambahkan alat baru dengan mengisi nama alat, jumlah stok, dan harga sewa per hari.
--  **Lihat (Read)** — Menampilkan seluruh daftar alat beserta informasi stok tersedia, jumlah yang sedang dipinjam, dan harga sewa.
--  **Edit (Update)** — Mengubah data alat seperti nama, jumlah stok, dan harga sewa.
--  **Hapus (Delete)** — Menghapus data alat secara permanen dari database.
+- **Tambah (Create)** — Menambahkan alat baru dengan mengisi nama alat, jumlah stok, dan harga sewa per hari.
+- **Lihat (Read)** — Menampilkan seluruh daftar alat beserta informasi stok tersedia, jumlah yang sedang dipinjam, dan harga sewa.
+- **Edit (Update)** — Mengubah data alat seperti nama, jumlah stok, dan harga sewa.
+- **Hapus (Delete)** — Menghapus data alat secara permanen dari database.
 
 Tersedia indikator visual berupa progress bar yang menunjukkan ketersediaan stok — **hijau** jika stok masih banyak, **oranye** jika hampir habis, dan **merah** jika stok habis.
 
-<!-- Tambahkan screenshot halaman stok alat di sini -->
+<p align="center">
+  <img src="screenshots/stok_alat.png" width="200"/>
+  <img src="screenshots/form_tambah_alat.png" width="200"/>
+</p>
 
 ---
 
@@ -52,16 +63,19 @@ Menampilkan ringkasan data secara real-time meliputi:
 - Potensi pendapatan dari transaksi yang masih aktif
 - Jumlah total transaksi, transaksi aktif, dan transaksi selesai
 
-<!-- Tambahkan screenshot halaman statistik di sini -->
-
+<p align="center">
+  <img src="screenshots/statistik.png" width="200"/>
+</p>
 
 ---
 
 ### Light Mode & Dark Mode
 Aplikasi mendukung dua tema tampilan yaitu **Light Mode** dan **Dark Mode**. Pengguna dapat beralih antara keduanya kapan saja melalui tombol di pojok kanan atas aplikasi.
 
-<!-- Tambahkan screenshot light mode dan dark mode di sini -->
-
+<p align="center">
+  <img src="screenshots/peminjaman_light.png" width="200"/>
+  <img src="screenshots/peminjaman_dark.png" width="200"/>
+</p>
 
 ---
 
@@ -134,7 +148,7 @@ Aplikasi mendukung dua tema tampilan yaitu **Light Mode** dan **Dark Mode**. Pen
 
 ---
 
-## 📁 Struktur Project
+## Struktur Project
 
 ```
 lib/
