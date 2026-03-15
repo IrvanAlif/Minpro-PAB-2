@@ -17,8 +17,6 @@ Pengguna harus login terlebih dahulu sebelum menggunakan aplikasi. Tersedia fitu
 
 <!-- Tambahkan screenshot halaman login/register di sini -->
 
-&nbsp;
-
 ---
 
 ### 📋 Manajemen Peminjaman
@@ -46,8 +44,6 @@ Tersedia indikator visual berupa progress bar yang menunjukkan ketersediaan stok
 
 <!-- Tambahkan screenshot halaman stok alat di sini -->
 
-&nbsp;
-
 ---
 
 ### 📊 Statistik
@@ -58,7 +54,6 @@ Menampilkan ringkasan data secara real-time meliputi:
 
 <!-- Tambahkan screenshot halaman statistik di sini -->
 
-&nbsp;
 
 ---
 
@@ -67,7 +62,6 @@ Aplikasi mendukung dua tema tampilan yaitu **Light Mode** dan **Dark Mode**. Pen
 
 <!-- Tambahkan screenshot light mode dan dark mode di sini -->
 
-&nbsp;
 
 ---
 
