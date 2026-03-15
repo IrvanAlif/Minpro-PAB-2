@@ -4,14 +4,6 @@ Aplikasi mobile manajemen peminjaman alat camping berbasis Flutter yang terinteg
 
 ---
 
-## 📱 Screenshot Aplikasi
-
-<!-- Tambahkan screenshot aplikasi di sini -->
-
-&nbsp;
-
----
-
 ## 📝 Deskripsi Aplikasi
 
 Camping Rental App adalah aplikasi yang dirancang untuk memudahkan pengelolaan peminjaman alat-alat camping. Aplikasi ini memungkinkan pengguna untuk mencatat data peminjam, memantau stok alat yang tersedia, serta melihat statistik pendapatan secara real-time. Seluruh data disimpan dan diambil dari database Supabase sehingga dapat diakses kapan saja.
@@ -21,7 +13,7 @@ Camping Rental App adalah aplikasi yang dirancang untuk memudahkan pengelolaan p
 ## ✨ Fitur Aplikasi
 
 ### 🔐 Autentikasi
-Pengguna harus login terlebih dahulu sebelum menggunakan aplikasi. Tersedia fitur **Register** untuk membuat akun baru dan **Login** untuk masuk ke akun yang sudah ada. Autentikasi menggunakan Supabase Auth sehingga data pengguna aman dan terenkripsi.
+Pengguna harus login terlebih dahulu sebelum menggunakan aplikasi. Tersedia fitur **Register** untuk membuat akun baru dan **Login** untuk masuk ke akun yang sudah ada. Setelah selesai menggunakan aplikasi, pengguna dapat **Logout** melalui tombol di pojok kanan atas. Autentikasi menggunakan Supabase Auth sehingga data pengguna aman dan terenkripsi.
 
 <!-- Tambahkan screenshot halaman login/register di sini -->
 
@@ -30,16 +22,27 @@ Pengguna harus login terlebih dahulu sebelum menggunakan aplikasi. Tersedia fitu
 ---
 
 ### 📋 Manajemen Peminjaman
-Fitur utama aplikasi untuk mencatat data peminjaman alat camping. Pengguna dapat menambahkan peminjaman baru dengan mengisi nama peminjam, nomor HP, jumlah hari, dan memilih alat yang dipinjam beserta jumlahnya. Setiap peminjaman memiliki status **Aktif** (belum dikembalikan) dan **Selesai** (sudah dikembalikan). Tersedia juga fitur edit dan hapus data peminjaman.
+Fitur utama aplikasi untuk mencatat data peminjaman alat camping. Mendukung operasi CRUD lengkap:
 
-<!-- Tambahkan screenshot halaman peminjaman di sini -->
+- ➕ **Tambah (Create)** — Menambahkan peminjaman baru dengan mengisi nama peminjam, nomor HP, jumlah hari, dan memilih alat yang dipinjam beserta jumlahnya. Estimasi total biaya ditampilkan secara otomatis.
+- 📖 **Lihat (Read)** — Menampilkan seluruh daftar peminjaman beserta status, jumlah barang, dan total biaya. Tersedia tombol **Detail** untuk melihat rincian lengkap setiap peminjaman.
+- ✏️ **Edit (Update)** — Mengubah data peminjaman yang masih berstatus Aktif, termasuk nama, nomor HP, jumlah hari, dan barang yang dipinjam.
+- 🗑️ **Hapus (Delete)** — Menghapus data peminjaman secara permanen dari database.
+- ✅ **Kembalikan** — Menandai peminjaman sebagai **Selesai** ketika alat sudah dikembalikan, sehingga stok alat otomatis bertambah kembali.
 
-&nbsp;
+
 
 ---
 
 ### 📦 Manajemen Stok Alat
-Fitur untuk mengelola data alat camping yang tersedia. Pengguna dapat menambah alat baru dengan mengisi nama alat, jumlah stok, dan harga sewa per hari. Tersedia indikator visual berupa progress bar yang menunjukkan ketersediaan stok — **hijau** jika stok masih banyak, **oranye** jika hampir habis, dan **merah** jika stok habis.
+Fitur untuk mengelola data alat camping yang tersedia. Mendukung operasi CRUD lengkap:
+
+- ➕ **Tambah (Create)** — Menambahkan alat baru dengan mengisi nama alat, jumlah stok, dan harga sewa per hari.
+- 📖 **Lihat (Read)** — Menampilkan seluruh daftar alat beserta informasi stok tersedia, jumlah yang sedang dipinjam, dan harga sewa.
+- ✏️ **Edit (Update)** — Mengubah data alat seperti nama, jumlah stok, dan harga sewa.
+- 🗑️ **Hapus (Delete)** — Menghapus data alat secara permanen dari database.
+
+Tersedia indikator visual berupa progress bar yang menunjukkan ketersediaan stok — **hijau** jika stok masih banyak, **oranye** jika hampir habis, dan **merah** jika stok habis.
 
 <!-- Tambahkan screenshot halaman stok alat di sini -->
 
@@ -48,7 +51,10 @@ Fitur untuk mengelola data alat camping yang tersedia. Pengguna dapat menambah a
 ---
 
 ### 📊 Statistik
-Menampilkan ringkasan data secara real-time meliputi total pendapatan dari transaksi yang sudah selesai, potensi pendapatan dari transaksi yang masih aktif, serta jumlah total transaksi, transaksi aktif, dan transaksi selesai.
+Menampilkan ringkasan data secara real-time meliputi:
+- Total pendapatan dari transaksi yang sudah selesai
+- Potensi pendapatan dari transaksi yang masih aktif
+- Jumlah total transaksi, transaksi aktif, dan transaksi selesai
 
 <!-- Tambahkan screenshot halaman statistik di sini -->
 
